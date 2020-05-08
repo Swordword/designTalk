@@ -44,7 +44,7 @@ class App extends Component {
   componentDidCatchError() {}
 
   config = {
-    pages: ["/pages/index/index"],
+    pages: ["/pages/index/index", "/pages/about/index"],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
@@ -59,6 +59,10 @@ class App extends Component {
       path: '/pages/index/index',
       componentLoader: () => import( /* webpackChunkName: "index_index" */'./pages/index/index'),
       isIndex: true
+    }, {
+      path: '/pages/about/index',
+      componentLoader: () => import( /* webpackChunkName: "about_index" */'./pages/about/index'),
+      isIndex: false
     }]} customRoutes={{}} />;
   }
 
