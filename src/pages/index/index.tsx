@@ -13,6 +13,9 @@ export default class Index extends Component {
   componentDidShow () { }
 
   componentDidHide () { }
+  onShareTimeline(){
+    
+  }
 
   render () {
     return (

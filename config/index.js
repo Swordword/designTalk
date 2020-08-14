@@ -1,3 +1,5 @@
+import * as path from 'path'
+
 const config = {
   projectName: 'designTalk',
   date: '2020-8-14',
@@ -11,6 +13,12 @@ const config = {
   outputRoot: 'dist',
   plugins: [],
   defineConstants: {
+  },
+  alias: {
+    '@/components': path.resolve(__dirname, '..', 'src/components'),
+    '@/utils': path.resolve(__dirname, '..', 'src/utils'),
+    '@/package': path.resolve(__dirname, '..', 'package.json'),
+    '@/project': path.resolve(__dirname, '..', 'project.config.json'),
   },
   copy: {
     patterns: [
