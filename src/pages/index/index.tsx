@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import { View, Text } from '@tarojs/components'
 import './index.scss'
+import api from '../../api'
 
 export default class Index extends Component {
 
   componentWillMount () { }
 
-  componentDidMount () { }
+  componentDidMount () { 
+    api.imageList()
+  }
 
   componentWillUnmount () { }
 
@@ -20,7 +23,7 @@ export default class Index extends Component {
   render () {
     return (
       <View className='index'>
-        <Text>Hello world!</Text>
+        <Text>Hello11 world!</Text>
       </View>
     )
   }
