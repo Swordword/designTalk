@@ -1,30 +1,43 @@
 import Taro from '@tarojs/taro'
 
-const baseURL = "https://massivejohn.com:8012"
+import {response} from '../types'
 
-interface params {
-  relationId: string | number
-}
+
+const baseURL = "https://mp.massivejohn.com"
+
 
 class API {
-  constructor() {
-
-  }
+  // constructor() {
+  // }
   imageList() {
-    Taro.request({
-      url:`${baseURL}/imageList`,
-      success:function(res){
-        console.log('res',res)
-      }
+    return new Promise((resolve , reject) => {
+      Taro.request({
+        url: `${baseURL}/imageList`,
+        success: function (res) {
+          console.log('res', res)
+          resolve(res.data)
+        },
+        fail: function (error) {
+          reject(error)
+        }
+      })
     })
   }
   image(relationId: string | number) {
-    Taro.request({
-      url:`${baseURL}/imageList?id=${relationId}`,
-      success:function(res){
-        console.log('res',res)
-      }
+    return new Promise((resolve, reject) => {
+      Taro.request({
+        url: `${baseURL}/imageList?id=${relationId}`,
+        success: function (res) {
+          console.log('res', res)
+          resolve(res.data)
+        },
+        fail: function (error) {
+          reject(error)
+        }
+      })
+
     })
+
   }
 }
 export default new API()
