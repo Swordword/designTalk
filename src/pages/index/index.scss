@@ -1,0 +1,21 @@
+.home-page {
+    // color: red;
+    // display: grid;
+    // grid-template-columns: 50vw 50vw;
+    // grid-template-rows: 200px 200px;
+    // grid-column-gap: 20px;
+    // grid-row-gap: 20px;
+    .img-grid {
+    }
+    .img-title {
+        font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 50px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-left: 8px;
+        color: #0d0c22;
+    }
+}

@@ -10,7 +10,7 @@ class API {
   // constructor() {
   // }
   imageList() {
-    return new Promise((resolve , reject) => {
+    return new Promise<response>((resolve , reject) => {
       Taro.request({
         url: `${baseURL}/imageList`,
         success: function (res) {
