@@ -16,3 +16,16 @@ export type response = {
   msg: string,
   data: imageInfo[]
 }
+
+export interface singleImageInfo {
+  id: number,
+  name: string,
+  key: string,
+  originHerf: string,
+  cate: string,
+  relationId: number
+}
+
+interface singleImageList{
+  
+}

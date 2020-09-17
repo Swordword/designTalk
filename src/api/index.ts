@@ -26,7 +26,7 @@ class API {
   image(relationId: string | number) {
     return new Promise((resolve, reject) => {
       Taro.request({
-        url: `${baseURL}/imageList?id=${relationId}`,
+        url: `${baseURL}/image?relationId=${relationId}`,
         success: function (res) {
           console.log('res', res)
           resolve(res.data)
