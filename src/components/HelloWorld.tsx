@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
 import { View, Text, Button } from '@tarojs/components'
-
-
-
 export default class HelloWorld extends Component {
   render() {
     return (
